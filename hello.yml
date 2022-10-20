@@ -1,0 +1,23 @@
+# hello.yml
+# accounts(账户)
+#       coins(币): stake(股份)、coin(币)
+# validator(验证器)
+#       staked(质押)
+# faucet(水龙头)
+#       token(代币)
+# genesis(创始)
+accounts:
+  - name: alice
+    coins: ["1000token", "100000000stake", "1000coin"]
+  - name: bob
+    coins: ["500token", "1000coin", "100000000stake"]
+validator:
+  name: alice
+  staked: "100000000stake"
+faucet:
+  name: bob
+  coins: ["5token", "100000stake"]
+genesis:
+  chain_id: "hello"
+init:
+  home: "$HOME/.hello"
